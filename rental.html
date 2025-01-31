@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Agreement Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Rental Agreement Form</h2>
+    <form id="rentalForm">
+        <input type="text" id="landlord" placeholder="Landlord Name" required>
+        <input type="text" id="tenant" placeholder="Tenant Name" required>
+        <textarea id="property" placeholder="Property Details"></textarea>
+        <input type="text" id="rentAmount" placeholder="Rent Amount" required>
+        <button type="button" onclick="generateRental()">Generate Rental Agreement</button>
+    </form>
+
+    <a href="index.html">Back to Home</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
