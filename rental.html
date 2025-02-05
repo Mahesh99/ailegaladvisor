@@ -7,19 +7,67 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <h2>Rental Agreement Form</h2>
     <form id="rentalForm">
-        <input type="text" id="landlord" placeholder="Landlord Name" required>
-        <input type="text" id="tenant" placeholder="Tenant Name" required>
-        <textarea id="property" placeholder="Property Details"></textarea>
-        <input type="text" id="rentAmount" placeholder="Rent Amount" required>
+        <label for="landlord">Landlord's Name:</label>
+        <input type="text" id="landlord" required>
+
+        <label for="landlordAddress">Landlord's Address:</label>
+        <textarea id="landlordAddress" required></textarea>
+
+        <label for="tenant">Tenant's Name:</label>
+        <input type="text" id="tenant" required>
+
+        <label for="tenantAddress">Tenant's Address:</label>
+        <textarea id="tenantAddress" required></textarea>
+
+        <label for="leaseProperty">Lease Property Address:</label>
+        <textarea id="leaseProperty" required></textarea>
+
+        <label for="propertyType">Property Type:</label>
+        <select id="propertyType" required>
+            <option value="Independent House">Independent House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Farm House">Farm House</option>
+            <option value="Residential Property">Residential Property</option>
+        </select>
+
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="bedrooms" required>
+
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="number" id="bathrooms" required>
+
+        <label for="carparks">Number of Car Parks:</label>
+        <input type="number" id="carparks" required>
+
+        <label for="area">Property Area (in sq. ft.):</label>
+        <input type="number" id="area" required>
+
+        <label for="leaseTerm">Lease Term (months/years):</label>
+        <input type="text" id="leaseTerm" required>
+
+        <label for="leaseStartDate">Lease Start Date:</label>
+        <input type="date" id="leaseStartDate" required>
+
+        <label for="rentAmount">Monthly Rent (in numbers & words):</label>
+        <input type="text" id="rentAmount" required>
+
+        <label for="noticePeriod">Notice Period (e.g., One Month):</label>
+        <input type="text" id="noticePeriod" required>
+
+        <label for="depositAmount">Rental Deposit (in numbers & words):</label>
+        <input type="text" id="depositAmount" required>
+
+        <label for="meterReading">Starting Meter Reading:</label>
+        <input type="text" id="meterReading" required>
+
+        <label for="fixtures">List of Fixtures and Fittings:</label>
+        <textarea id="fixtures" placeholder="Item 1, Item 2, Item 3..." required></textarea>
+
         <button type="button" onclick="generateDocument('rental')">Generate Rental Agreement</button>
     </form>
 
-    <a href="index.html">Back to Home</a>
-
     <script src="script.js"></script>
-
 </body>
 </html>
