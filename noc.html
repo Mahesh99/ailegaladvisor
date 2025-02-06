@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOC Form</title>
+    <title>No Objection Certificate (NOC)</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <h2>No Objection Certificate (NOC) Form</h2>
     <form id="nocForm">
-        <input type="text" id="nocName" placeholder="Your Name" required>
-        <input type="text" id="nocReceiver" placeholder="Recipient Name" required>
-        <textarea id="nocPurpose" placeholder="Purpose of NOC"></textarea>
+        <label for="ownerName">Owner's Name:</label>
+        <input type="text" id="ownerName" required>
+
+        <label for="propertyAddress">Property Address:</label>
+        <textarea id="propertyAddress" required></textarea>
+
+        <label for="relation">Relation with Business Operator:</label>
+        <input type="text" id="relation" required>
+
+        <label for="businessName">Business Name:</label>
+        <input type="text" id="businessName" required>
+
         <button type="button" onclick="generateDocument('noc')">Generate NOC</button>
     </form>
 
-    <a href="index.html">Back to Home</a>
-
     <script src="script.js"></script>
-
 </body>
 </html>
