@@ -53,7 +53,7 @@ function generateDocument(type) {
             fixtures: document.getElementById("fixtures").value
         };
     }
-    fetch("YOUR_MAKE_WEBHOOK_URL", {
+    fetch("https://hook.eu2.make.com/e4k36mlugsisxq5arp9vxr9l9tr73jh0", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
