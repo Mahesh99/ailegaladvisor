@@ -28,11 +28,32 @@ function generateDocument(type) {
         formData = {
             ownerName: document.getElementById("ownerName").value,
             propertyAddress: document.getElementById("propertyAddress").value,
-            businessName: document.getElementById("businessName").value
+            businessName: document.getElementById("businessName").value,
+            agreementLocation: "",
+    landlord: "",
+    landlordAddress: "",
+    tenant: "",
+    tenantAddress: "",
+    leaseProperty: "",
+    propertyType: "",
+    bedrooms: "",
+    bathrooms: "",
+    carparks: "",
+    area: "",
+    leaseTerm: "",
+    leaseStartDate: "",
+    rentAmount: "",
+    noticePeriod: "",
+    depositAmount: "",
+    meterReading: "",
+    fixtures: ""
         };
     } 
     else if (type === "rental") {
         formData = {
+            ownerName: "",
+    propertyAddress: "",
+    businessName: "",
             agreementLocation: document.getElementById("agreementLocation").value,
             landlord: document.getElementById("landlord").value,
             landlordAddress: document.getElementById("landlordAddress").value,
