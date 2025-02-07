@@ -26,6 +26,7 @@ function generateDocument(type) {
 
     if (type === "noc") {
         formData = {
+            type:"noc",
             ownerName: document.getElementById("ownerName").value,
             propertyAddress: document.getElementById("propertyAddress").value,
             businessName: document.getElementById("businessName").value,
@@ -51,6 +52,7 @@ function generateDocument(type) {
     } 
     else if (type === "rental") {
         formData = {
+            type:"rental",
             ownerName: "",
     propertyAddress: "",
     businessName: "",
